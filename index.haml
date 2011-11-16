@@ -1,0 +1,52 @@
+!!! 5
+%html
+  %head
+    %title="dwm configuralatormabititor"
+    %script{:type => "text/javascript",
+            :src  => "http://code.jquery.com/jquery-1.7.js"}
+    %script{:type => "text/javascript",
+            :src  => "https://raw.github.com/jweir/colorwheel/master/javascripts/raphael-1.3.1-min.js"}
+    %script{:type => "text/javascript",
+            :src  => "https://github.com/jweir/colorwheel/raw/master/javascripts/colorwheel.js"}
+    %link{:rel => "stylesheet", :href => "style.css"}
+    %script{:type => "text/javascript", :src=> "js.js"}
+  %body
+    
+    .dwm
+      .title='CONFIGULARORS'
+      .dwm_bar
+        .dwm_nav(id='nav_1')='web'
+        .dwm_nav(id='nav_2')='code'
+        .dwm_nav(id='nav_3')='chat'
+        .dwm_nav(id='nav_4')='music'
+        .dwm_nav(id='nav_5')='extra'
+        .dwm_win(id='win')='[T]'
+        .dwm_title(id='title')='index.haml + (~/dwmconfig) - GVIM'
+        .dwm_root(id='root')='NetSKY(88) Wednesday Nov 16 11:26 [100] [charged]'
+    %br
+    %br
+    .dwm_edit
+      .dwm_edit_cat='selected fg'
+      .dwm_edit_box(id='sel_fg')='a'
+      %br
+      .dwm_edit_cat='unselected fg' 
+      .dwm_edit_box(id='unsel_fg')='a'
+      %br
+      .dwm_edit_cat='selected bg' 
+      .dwm_edit_box(id='sel_bg')='a'
+      %br
+      .dwm_edit_cat='unselected bg' 
+      .dwm_edit_box(id='unsel_bg')='a'
+      %br
+      .dwm_edit_cat='selected border' 
+      .dwm_edit_box(id='sel_border')='a'
+      %br
+      .dwm_edit_cat='unselected border' 
+      .dwm_edit_box(id='unsel_border')='a'
+      %br
+
+    .c(id="color_box")
+    .about
+      .title='About'
+      this is the first gui generator i wrote in emcaderp.
+

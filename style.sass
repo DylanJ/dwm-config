@@ -1,0 +1,83 @@
+//static const char font[]            = "-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*";
+//static const char normbordercolor[] = "#0d0d0d";
+//static const char normbgcolor[]     = "#393939";
+//static const char normfgcolor[]     = "#ffffff";
+//static const char selbordercolor[]  = "#aaaaaa";
+//static const char selbgcolor[]      = "#1b7ee0";
+//static const char selfgcolor[]      = "#000000";
+
+@mixin bg( $color )
+  background-color: $color
+
+@mixin fg( $color )
+  color: $color
+
+body
+  font-family: 'Droid Sans Mono'
+  @include bg( #1f7da1 )
+  @include fg( white )
+
+.title
+  font-size: 40px
+
+.dwm_bar
+  width: 1000px
+  @include fg( white )
+  @include bg( black )
+
+.dwm_edit
+  @include bg( #0d5875 )
+  width: 600px
+
+.dwm_edit_cat
+  display: inline
+  @include bg( #094157 )
+
+.dwm_edit_box
+  display: inline
+  padding:
+    left: 40px
+    right: 40px
+  float: right
+  background-color: red
+
+#color_box
+  width: 400px
+
+
+.dwm_nav
+  display: inline
+  @include fg( white )
+  @include bg( black )
+  width: 10px
+  padding:
+    left: 7px
+    right: 7px
+
+.dwm_nav_sel
+  display: inline
+  @include fg( black )
+  @include bg( blue )
+  width: 10px
+  padding:
+    left: 7px
+    right: 7px
+
+.dwm_win
+  display: inline
+
+.dwm_title
+  display: inline
+  width: 100
+  @include fg( black )
+  @include bg( blue )
+  
+.dwm_root
+  padding:
+    left: 7px
+    right: 7px
+  float: right
+
+.dwm_border
+  border: solid grey 3px
+
