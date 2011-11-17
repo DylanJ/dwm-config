@@ -21,9 +21,8 @@ textarea
   border: dotted 5px white
   font-family: 'Droid Sans Mono'
 
-  color: white
-  background-color: gray
-  @include bg( #1f7da1 )
+  @include fg( white )
+  @include bg( black )
 
 .title
   font-size: 40px
@@ -31,16 +30,12 @@ textarea
 .dwm_bar
   display: inline
   width: 100%
-  @include fg( white )
-  @include bg( black )
 
 .dwm_edit
-  @include bg( #0d5875 )
   width: 500px
 
 .dwm_edit_cat
   display: inline
-  @include bg( #094157 )
 
 .dwm_edit_box
   display: inline
@@ -48,7 +43,6 @@ textarea
     left: 40px
     right: 40px
   float: right
-  background-color: red
 
 #color_box
   position: absolute
@@ -64,8 +58,6 @@ textarea
 
 .dwm_nav
   display: inline
-  @include fg( white )
-  @include bg( black )
   width: 10px
   padding:
     left: 7px
@@ -73,8 +65,6 @@ textarea
 
 .dwm_nav_sel
   display: inline
-  @include fg( black )
-  @include bg( blue )
   width: 10px
   padding:
     left: 7px
@@ -86,8 +76,6 @@ textarea
 .dwm_title
   display: inline
   width: 100%
-  @include fg( black )
-  @include bg( blue )
   
 .dwm_root
   padding:

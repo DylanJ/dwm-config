@@ -55,6 +55,8 @@ draw = ->
   fg( '.dwm_root', vars['unsel_fg'] )
   bg( '.dwm_root', vars['unsel_bg'] )
   
+  $('#output').css('border', 'solid 5px ' + vars['unsel_border'])
+
   write_colors()
   return
 
@@ -75,6 +77,11 @@ $(document).ready ->
   cw = Raphael.colorwheel($('#color_box')[0], 300, 300 )
   cw.color( $('#sel_fg').css('background-color') )
   
+  $('#output').hover(
+    -> $(this).css('border', 'solid 5px ' + vars['sel_border'] ),
+    -> $(this).css('border', 'solid 5px ' + vars['unsel_border'] )
+  )
+
   $('.dwm_edit_box').click( ->
     
     $('#color_box').show()
