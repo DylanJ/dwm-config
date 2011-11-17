@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title="dwm configuralatormabititor"
+    %title="dwm bar theme creator"
     %script{:type => "text/javascript",
             :src  => "http://code.jquery.com/jquery-1.7.js"}
     %script{:type => "text/javascript",
@@ -13,16 +13,18 @@
   %body
     
     .dwm
-      .title='CONFIGULARORS'
-      .dwm_bar
-        .dwm_nav(id='nav_1')='web'
-        .dwm_nav(id='nav_2')='code'
-        .dwm_nav(id='nav_3')='chat'
-        .dwm_nav(id='nav_4')='music'
-        .dwm_nav(id='nav_5')='extra'
-        .dwm_win(id='win')='[T]'
-        .dwm_title(id='title')='index.haml + (~/dwmconfig) - GVIM'
-        .dwm_root(id='root')='NetSKY(88) Wednesday Nov 16 11:26 [100] [charged]'
+      .title='DWM THEME CREATOR'
+      .dwm_wrap
+        .dwm_nav_bar
+          .dwm_nav(id='nav_1')='web'
+          .dwm_nav(id='nav_2')='code'
+          .dwm_nav(id='nav_3')='chat'
+          .dwm_nav(id='nav_4')='music'
+          .dwm_nav(id='nav_5')='extra'
+        .dwm_bar
+          .dwm_win(id='win')='[T]'
+          .dwm_title(id='title')='index.haml + (~/dwmconfig) - GVIM'
+          .dwm_root(id='root')='Wednesday Nov 16 11:26'
     %br
     %br
     .dwm_edit
@@ -44,9 +46,20 @@
       .dwm_edit_cat='unselected border' 
       .dwm_edit_box(id='unsel_border')='a'
       %br
-
+    
     .c(id="color_box")
-    .about
-      .title='About'
-      this is the first gui generator i wrote in emcaderp.
+    .output
+      %textarea(id='output' rows='6' cols='48')
+    
+    %br
+    %br
+    
+    .todo
+      .title='Todo'
+      %ul
+        %li='Allow users to select font'
+        %li='Allow user to choose border size'
+        %li='Add window rule section'
+        %li='Add remove workspace tags'
+        %li='Polish'
 
